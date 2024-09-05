@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - 'master'
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  checks: write
+  contents: write
+  deployments: write
+
+jobs:
+  release:
+    name: Release
+    uses: qapital/github-workflows/.github/workflows/release.yml@master
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ACTION_GITHUB_TOKEN: ${{ secrets.ACTION_GITHUB_TOKEN }}
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
