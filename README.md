@@ -1,3 +1,7 @@
+This fork adds the wedbush enum to the request to create a plaid processor token. It was made to not have to wait
+for Plaid to add this themselves. When they have added it this repo should be archived and any dependency on it should be changed to the official project
+
+
 # plaid-java [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.plaid/plaid-java/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.plaid/plaid-java)
 
 Java Bindings for the Plaid API (https://www.plaid.com/docs). This library is generated from the [Plaid OpenAPI spec](https://github.com/plaid/plaid-openapi).
