@@ -147,7 +147,9 @@ public class ProcessorTokenCreateRequest {
     
     BOOM("boom"),
     
-    PAYNOTE("paynote");
+    PAYNOTE("paynote"),
+
+    WEDBUSH("wedbush");
 
     private String value;
 
