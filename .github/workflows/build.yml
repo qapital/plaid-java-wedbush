@@ -13,6 +13,6 @@ defaults:
 jobs:
   build:
     name: Build
-    uses: qapital/github-workflows/.github/workflows/build.yml@master
+    uses: qapital/github-workflows/.github/workflows/build.yml@main
     secrets:
       ACTION_GITHUB_TOKEN: ${{ secrets.ACTION_GITHUB_TOKEN }}
